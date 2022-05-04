@@ -3,14 +3,12 @@ import { useRouter } from 'next/router';
 
 import { openGraph } from '@/lib/helper';
 
-// !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+  title: '🎤 Slick Tunes 🎶',
+  siteName: '🎤 Slick Tunes 🎶',
+  description: 'Super duper React + Redux Spotify clone!',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://tunes.aproofofconcept.com',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
@@ -22,7 +20,7 @@ type SeoProps = {
   templateTitle?: string;
 } & Partial<typeof defaultMeta>;
 
-export default function Seo(props: SeoProps) {
+export const Seo = (props: SeoProps) => {
   const router = useRouter();
   const meta = {
     ...defaultMeta,
@@ -87,7 +85,7 @@ export default function Seo(props: SeoProps) {
       <meta name='theme-color' content='#ffffff' />
     </Head>
   );
-}
+};
 
 type Favicons = {
   rel: string;

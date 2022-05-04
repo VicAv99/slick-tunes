@@ -1,5 +1,5 @@
 {
-  "name": "ts-nextjs-tailwind-starter",
+  "name": "slick-tunes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,22 +20,18 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "clsx": "^1.1.1",
     "next": "^12.1.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-icons": "^4.3.1",
-    "tailwind-merge": "^1.2.1"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@svgr/webpack": "^6.2.1",
-    "@tailwindcss/forms": "^0.5.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@types/react": "^18.0.8",
-    "@types/tailwindcss": "^3.0.10",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "autoprefixer": "^10.4.5",
@@ -50,9 +46,7 @@
     "next-sitemap": "^2.5.20",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.10",
     "standard-version": "^9.3.2",
-    "tailwindcss": "^3.0.24",
     "typescript": "^4.6.4"
   },
   "lint-staged": {

@@ -33,16 +33,12 @@ export const NextImage = ({
   const [status, setStatus] = React.useState(
     useSkeleton ? 'loading' : 'complete'
   );
-  const widthIsSet = className?.includes('w-') ?? false;
   const imageClassName = `${imgClassName} ${
     status === 'loading' && blurClasses
   }`;
 
   return (
-    <figure
-      style={!widthIsSet ? { width: `${width}px` } : undefined}
-      className={className}
-    >
+    <figure style={{ width: `${width}px` }} className={className}>
       <Image
         className={imageClassName}
         src={src}
